@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Davina to UVA</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Times New Roman', serif;
+            background-color: #ffffff;
+            padding: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .letter-container {
+            width: 650px;
+            background: #ffffff;
+            padding: 40px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border: 1px solid #000;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .header img {
+            width: 200px;
+        }
+        .date {
+            text-align: right;
+            margin-bottom: 20px;
+            font-size: 1rem;
+        }
+        .content {
+            font-size: 1.2rem;
+            line-height: 1.6;
+        }
+        .signature {
+            margin-top: 30px;
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="letter-container">
+        <div class="header">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/University_of_Virginia_logo.svg/1280px-University_of_Virginia_logo.svg.png" alt="UVA Logo">
+            <h1>University of Virginia</h1>
+        </div>
+        <div class="date">January 28, 2025</div>
+        <div class="content">
+            <p><strong>Davin Esmaeilian</strong><br>[Your Address]<br>[City, State, ZIP]</p>
+            <p>Dear Mr. Esmaeilian,</p>
+            <p>
+                Congratulations on your offer of admission to the University of Virginia! Your application is impressive 
+                and demonstrates exceptional academic and personal achievements. We are confident that you will make a significant 
+                contribution to our community.
+            </p>
+            <p>
+                We have mailed you an official offer of admission along with important enclosures. On behalf of the 
+                <strong>Admission Committee</strong> and the entire UVA community, it is my pleasure to extend this offer to you.
+            </p>
+            <p>
+                If you plan to apply for financial aid, please submit all required documents before the 
+                <strong>Student Financial Services deadline of March 1st.</strong> Award information will be posted in 
+                the Financial Aid section of your Student Self-Service Center.
+            </p>
+            <p>
+                Congratulations once again on your offer of admission to UVA! We look forward to welcoming you to Charlottesville.
+            </p>
+        </div>
+        <div class="signature">
+            Sincerely,<br><br>
+            <strong>Greg W. Roberts</strong><br>
+            Dean of Admission
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    <script>
+        window.onload = () => {
+            confetti({
+                particleCount: 300,
+                spread: 100,
+                startVelocity: 40,
+                origin: { y: 0 }
+            });
+        };
+    </script>
+</body>
+</html>
